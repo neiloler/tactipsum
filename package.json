@@ -5,7 +5,9 @@
   "dependencies": {
     "material-ui": "^0.18.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-lorem-component": "^0.12.1",
+    "styled-components": "^2.0.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
