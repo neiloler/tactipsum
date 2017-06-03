@@ -28,6 +28,10 @@ const AppLogo = styled.img`
 `;
 
 class App extends Component {
+  randomNumber = () => {
+    return Math.round(Math.random() * 10) + 1;
+  };
+
   render() {
     return (
       <AppWrapper>
@@ -36,7 +40,7 @@ class App extends Component {
           <h2>Tactipsum</h2>
         </AppHeader>
         <AppIntro>
-          <Lorem seed={1} />
+          <Lorem seed={this.randomNumber()} />
         </AppIntro>
       </AppWrapper>
     );
