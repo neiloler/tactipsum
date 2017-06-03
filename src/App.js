@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Lorem from "react-lorem-component";
 import styled from "styled-components";
 import logo from "./logo.svg";
+import Words from "./Words";
 
 const AppWrapper = styled.div`
   text-align: center;
@@ -40,7 +41,7 @@ class App extends Component {
           <h2>Tactipsum</h2>
         </AppHeader>
         <AppIntro>
-          <Lorem seed={this.randomNumber()} />
+          <Lorem seed={this.randomNumber()} words={Words} />
         </AppIntro>
       </AppWrapper>
     );
